@@ -19,7 +19,7 @@
     font-size: 25px;
     color: #818181;
     display: block;
-    transition: 0.3s;
+    transition: 0.5s;
   }
   
   /* When you mouse over the navigation links, change their color */
@@ -31,18 +31,160 @@
   .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+    margin-top: 5px;
+    right: 15px;
+    margin-left: 40px;
+    width: 30px;
+    height: 30px;
   }
-  
+
+ 
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
   #main {
-    transition: margin-left .5s;
-    padding: 20px;
+    transition: margin-left .3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+	  flex-wrap: wrap;
+    
   }
+
+  body {
+    font-family: Helvetica, sans-serif;
+    background-color: rgba(253, 213, 213, 0.564);
+    color: #222;
+    margin-top: 100px;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    margin: 15px 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    margin: 0;
+    font-weight: 100;
+    
+}
+
+h3 {
+  padding-top: 5px;
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+.card {
+    background-color: #f3f3f3;
+    border-radius: 15px;
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+    box-shadow: rgba(0,0,0,0.1) 0 10px 10px;
+    border: 2px solid #aaa;
+}
+
+.card .avatar {
+    width: 100px;
+    border-radius: 50%;
+    margin-top: -50px; 
+    box-shadow: rgba(0,0,0,0.1) 0 10px 10px;
+}
+
+
+
+.contacts{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.contacts li {
+    width: 30px;
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+.contacts li a {
+  text-decoration: none;
+  color: black;
+}
+
+.contacts li a i:hover {
+    opacity: 0.5;
+    transition: opacity ease-in-out 0.2s;
+}
+
+.resume {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.resume li {
+  display: inline-block;
+}
+
+.resume li a {
+  text-decoration: none;
+  color: black;
+}
+
+.resume li a:hover {
+    opacity: 0.5;
+    transition: opacity ease-in-out 0.2s;
+}
+
+#side_open{
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.lowergrey {    
+ 
+  width: 600px;
+  height: 400px;
+  margin: 0px auto;
+  margin-top: 60px;
+ 
+}
+
+.lowergrey p, ul {
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  line-height: 27px;
+
+}
+
+.lowergrey ul {
+  background-color: #f3f3f3;
+  margin-top:60px;
+  margin-right: 200px;
+  margin-left: 200px;
+  border-radius: 10px;
+  border: 2px solid#aaa;
+  font-size:x-large;
+  padding: 7px;
+  box-shadow: rgba(0,0,0,0.1) 0 10px 10px;
+}
+
+.lowergrey ul a i {
+  padding-right: 5px;
+}
+
+
+
   
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  /* On small4r screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
