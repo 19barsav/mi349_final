@@ -14,7 +14,7 @@
 
       <div id="mySidenav" class="sidenav">
         <button class="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></button>
-        <a class="tabs" href="index.html">About Me</a>
+        <a class="tabs" href="index.html">Home</a>
         <a class="tabs" href="experience.html">Experience</a>
       </div>
       
@@ -23,7 +23,55 @@
       
       <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
       <div id="main">
+
+        <div class="row">
+          <div class="column" onclick="openTab('cur_exp');"><h1>Current Work & Projects</h1></div>
+          <div class="column" onclick="openTab('past_exp');"><h1>Past (Proffessional) Experience</h1></div>
+          <div class="column" onclick="openTab('other');"><h1>Research & Other Interests</h1></div>
+        </div>
+        
+        <!-- The expanding grid (hidden by default) -->
+        <div id="cur_exp" class="containerTab">
+          <!-- If you want the ability to close the container, add a close button -->
+          <span onclick="this.parentElement.style.display='none'" class="closebtn"><i class="fa-solid fa-xmark"></i></span>
+          <h2>Current Work & Projects</h2>
+          <p>I am currently a software development intern at the Michigan Health Information Network - Interoperability Institute. 
+            I began my internship as an instructional design intern and transferred to becoming the Deputy Director of Security's software intern
+            after his promotion. Additionally, I am beginning my 3rd fall/spring semester as an undergraduate learning assistant for the CSE 231 - Introduction
+            to Python Programming 1 course at Michigan State University. I have taught every semester, including summer semesters, for three years.
+          </p>
+          <p>
+            Academically, I will be graduating with a Bachelor of Science in both Computer Science Engineering and Psychology
+            May of 2023. I am on a 5-year Master's track for Computer Science Engineering and will be completing a thesis track. 
+            This summer, I have submitted my first paper for publication at EMNLP and completed an undergraduate thesis exploring the 
+            intersectionally of psychology, climate change, and computational social science.
+          </p>
+        </div>
+        
+        <div id="past_exp" class="containerTab">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn"><i class="fa-solid fa-xmark"></i></span>
+          <h2>Past (Proffessional) Experience</h2>
+          <p>In the past, I was a computational data science and full-stack development intern at NASA Glenn Research Center.
+            I worked with the GVIS lab under the Aeronautics Mission Directorate on a project privately listed under the Convergent Aeronatic Solutions (CAS)
+            project. While at NASA, I worked with a local library to introduce Artificial Intelligence and Machine Learning to children and adults in the surrounding area. 
+            I met with the National Science Foundation, and created many long-lasting relationships.
+          </p>
+          <p>
+            At the beginning of my career, I was a Level 2 Student Clerical Aide for the Institute for Global Health under the College of Osteopathic Medicine at Michigan State University.
+            Although I have gone down a different path, I learned marketing, advertising, and basic web-design while at IGH. 
+          </p>
+        </div>
+        
+        <div id="other" class="containerTab">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn"><i class="fa-solid fa-xmark"></i></span>
+          <h2>Research & Other Interests</h2>
+          <p>Outside of working on projects and teaching, you can find me with my puppy or one of my three cats! I enjoy
+            reading science fiction/fantasy - particularly New Adult and Dystopian series. I play far too much APEX Legends, 
+            and I'm outside when the months are warmer. I am an avid bowler, as well!
+          </p>
+        </div>
     
       </div>
+  <script src="exp_drop.js"></script>
 </body>
 </html>

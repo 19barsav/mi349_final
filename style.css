@@ -6,7 +6,7 @@
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: #111; /* Black*/
+    background-color: rgb(25, 25, 25); /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -17,9 +17,10 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #aeaeae;
     display: block;
     transition: 0.5s;
+    font-weight:500;
   }
   
   /* When you mouse over the navigation links, change their color */
@@ -51,9 +52,10 @@
 
   body {
     font-family: Helvetica, sans-serif;
-    background-color: rgba(253, 213, 213, 0.564);
-    color: #222;
+    background-color: rgba(255, 152, 152, 0.158);
+    color: rgb(25, 25, 25);
     margin-top: 100px;
+    font-family:'Courier New', Courier, monospace
 }
 
 img {
@@ -78,13 +80,14 @@ h3 {
 }
 
 .card {
-    background-color: #f3f3f3;
+    background-color: #f8f6f6;
     border-radius: 15px;
     margin: 0 auto;
     width: 400px;
     text-align: center;
     box-shadow: rgba(0,0,0,0.1) 0 10px 10px;
     border: 2px solid #aaa;
+    color: rgb(25, 25, 25);
 }
 
 .card .avatar {
@@ -130,7 +133,7 @@ h3 {
 
 .resume li a {
   text-decoration: none;
-  color: black;
+  color: rgb(25, 25, 25);
 }
 
 .resume li a:hover {
@@ -166,7 +169,7 @@ h3 {
 }
 
 .lowergrey ul {
-  background-color: #f3f3f3;
+  background-color:  #f8f6f6;
   margin-top:60px;
   margin-right: 200px;
   margin-left: 200px;
@@ -174,6 +177,7 @@ h3 {
   border: 2px solid#aaa;
   font-size:x-large;
   padding: 7px;
+  color: rgb(25, 25, 25);
   box-shadow: rgba(0,0,0,0.1) 0 10px 10px;
 }
 
@@ -181,11 +185,66 @@ h3 {
   padding-right: 5px;
 }
 
+.row{
+  display: flex;
+}
+
+.column {
+  width: 33%;
+  padding: 55px;
+  text-align: center;
+  font-size: 17px;
+  cursor: pointer;
+  color: rgb(25, 25, 25);
+  margin: 20px;
+  border-radius: 50px;
+  box-shadow: rgba(0,0,0,0.1) 0 15px 15px;
+  background-color: #f8f6f6;
+  text-align: center;
+  font-weight:bolder;
+ 
+}
+
+.containerTab {
+  padding: 20px;
+  color: rgb(25, 25, 25);
+  display: none;
+  border-radius: 50px;
+  box-shadow: rgba(0,0,0,0.1) 0 15px 15px;
+  background-color: #f8f6f6;
+  margin: 20px;
+  font-size: large;
+  font-family: monospace;
+  font-weight: lighter;
+}
+
+.containerTab h2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the image */
+.containerTab .closebtn {
+  float: right;
+  color: rgb(25, 25, 25);
+  font-size: 35px;
+  cursor: pointer;
+}
 
 
   
-  /* On small4r screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-width:1200px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+
+    .row{display: block; font-size: x-small;}
+    .column{font-size:x-small; width: 50%;}
   }
